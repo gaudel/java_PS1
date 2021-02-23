@@ -10,14 +10,14 @@ This is the version for students working online on [repl.it](https://www.repl.it
 
 ## 1. A first project: Hello Java
 
-* Start a new [repl.it](https://www.repl.it) project by usig the <img src="img/GitHub-Mark-32px.png" width="15"> `Import from GitHub` tabulation in the `Create` menu. The GitHub repository to fork is [github.com/gaudel/java_PS1](https://github.com/gaudel/java_PS1).
+* Start a new [repl.it](https://www.repl.it) project by using the <img src="img/GitHub-Mark-32px.png" width="15"> `Import from GitHub` tabulation in the `Create` menu. The GitHub repository to fork is [github.com/gaudel/java_PS1](https://github.com/gaudel/java_PS1).
 * Share the project with your co-workers.
 * Open project's folders
 * What does each file / folder do ?
 
 
 ## 2. Hello world
-  
+
 Make sure to follow the naming conventions listed [here](https://www.javatpoint.com/java-naming-conventions).
 
 * Create a new class `Main` containing a `main()` method
@@ -28,19 +28,19 @@ Make sure to follow the naming conventions listed [here](https://www.javatpoint.
 
 
 ## 3. Let's design
-  
+
 Before programming, it's important to design the classes. Our app will respect the following specifications:
 
 * Each pokemon belongs to a specie (e.g: Bulbasaur, Charmander ...). A specie has the following characteristics: a number, a name and a type (GRASS, FIRE, WATER)
 * There can be multiple Pokemon of a same specie (e.g: multiple Bulbasaur). Each Pokemon has it's own set of attributes: a unique identifier (an integer starting from 0 and incrementing by 1 for each pokemon), a surname (immutable), a size (in inches, may be decimal), a level. A Pokemon starts at level 1. The maximum level is set at 5.
 
-  
+
 <br />
 => Draw the classes diagram corresponding to these specifications
 
 
 ## 4. Let's implement !
- 
+
 * Create a `core` package that will contain the classes corresponding to previous design
 * Create the classes
 * Within `main` method of `Main` class, instanciates your first pokemon. You are free to give it any characteristics you want
@@ -50,7 +50,7 @@ Before programming, it's important to design the classes. Our app will respect t
 
 
 ## 5. And ... action !
- 
+
 Pokemons are now able to gain experience points (XP)
 
 * Add a `XP` attribute to `Pokemon`
@@ -65,7 +65,7 @@ Pokemons are now able to gain experience points (XP)
 
 
 ## 6. More action
- 
+
 Pokemons are now ready to fight !
 
 * Add an health point (HP) and strength attribute to `Pokemon`. Starting HP and strength are determined only by the `Specie` of the pokemon but may vary afterwards
@@ -75,13 +75,13 @@ Pokemons are now ready to fight !
 
 
 ## 7. Next level
- 
+
 Currently, pokemons get XP but their level never changes.
-  
+
 * Add to the code, wherever you see fit, the following XP requirements:
 
 | Level        |     XP required     |   
-|:------------ | -------------: | 
+|:------------ | -------------: |
 | 1        |     0    |  
 | 2      |   5    |  
 | 3         |     15      |   
@@ -92,16 +92,16 @@ Currently, pokemons get XP but their level never changes.
 
 
 ## 8. Adding some RNG (Random Number Generation)
- 
+
 The code is currently deterministic which is not the most fun. Let's shake this a little.
 
 * Using the [Random](https://docs.oracle.com/javase/8/docs/api/java/util/Random.html) class, generate some random characteristics to spice combat
 
 
 ## More food for thought
- 
+
 * Using the [Scanner](https://docs.oracle.com/javase/8/docs/api/java/util/Scanner.html) class, allow User to choose it's Pokemons characteristics
-* Using Eclipse's export - runnable jar file - menu, export a runnable jar file. Try running it using this command:   
+* Run the command `bash build_jar.sh` to export a runnable jar file (the script assumes  `main()` method is in `Main` class in `core/Main.java`). Try running it using this command:   
 ```
 java -jar jeanmichel.jar
 ```  
